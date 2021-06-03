@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract_factory/Abstract_factory.iml" filepath="$PROJECT_DIR$/Abstract_factory/Abstract_factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Builder/Builder.iml" filepath="$PROJECT_DIR$/Builder/Builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Factory_method/Factory_method.iml" filepath="$PROJECT_DIR$/Factory_method/Factory_method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/creational-design-patterns.iml" filepath="$PROJECT_DIR$/.idea/creational-design-patterns.iml" />
+    </modules>
+  </component>
+</project>
