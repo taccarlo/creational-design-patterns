@@ -7,14 +7,14 @@ public class Builder {
         cook.setPizzaBuilder(margheritaPizzaBuilder);
         cook.constructPizza();
 
-        Pizza pizza1 = cook.getPizza();
-        System.out.println(pizza1);
+        Pizza pizzaMargherita = cook.getPizza();
+        System.out.println(pizzaMargherita);
 
         cook.setPizzaBuilder(prosciuttoEFunghiPizzaBuilder);
         cook.constructPizza();
 
-        Pizza pizza2 = cook.getPizza();
-        System.out.println(pizza2);
+        Pizza pizzaProsciuttoEFunghi = cook.getPizza();
+        System.out.println(pizzaProsciuttoEFunghi);
     }
 }
 

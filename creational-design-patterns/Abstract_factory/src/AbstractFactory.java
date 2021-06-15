@@ -11,12 +11,12 @@ public class AbstractFactory {
      */
     public static void main(String[] args) {
         PizzaFactory factory = PizzaFactory.getFactory(1);
-        Pizza pizza = factory.createPizza();
-        pizza.showIngredients();
+        Pizza pizzaProsciuttoEFunghi = factory.createPizza();
+        pizzaProsciuttoEFunghi.showIngredients();
 
-        PizzaFactory factory2 = PizzaFactory.getFactory(0);
-        Pizza pizza2 = factory2.createPizza();
-        pizza2.showIngredients();
+        factory = PizzaFactory.getFactory(0);
+        Pizza pizzaMargherita = factory.createPizza();
+        pizzaMargherita.showIngredients();
     }
 
 }
