@@ -1,25 +1,3 @@
-public class AbstractFactory {
-
-    /**
-     * L'Abstract factory (letteralmente, "fabbrica astratta")
-     * fornisce un'interfaccia per creare famiglie di oggetti
-     * connessi o dipendenti tra loro, in modo che non ci sia
-     * necessità da parte degli utilizzatori di specificare i
-     * nomi delle classi concrete all'interno del proprio codice.
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
-        PizzaFactory factory = PizzaFactory.getFactory(1);
-        Pizza pizzaProsciuttoEFunghi = factory.createPizza();
-        pizzaProsciuttoEFunghi.showIngredients();
-
-        factory = PizzaFactory.getFactory(0);
-        Pizza pizzaMargherita = factory.createPizza();
-        pizzaMargherita.showIngredients();
-    }
-
-}
 
 abstract class PizzaFactory {
     public static PizzaFactory getFactory(int i) {
@@ -60,3 +38,22 @@ class PizzaProsciuttoEFunghi extends Pizza {
         System.out.println("Prosciutto e funghi");
     }
 }
+
+public class AbstractFactory {
+
+    /**
+     * Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+     * In this example I create a Pizza without specific the pizza type, Margherita or ProsciuttoEFunghi.
+     */
+    public static void main(String[] args) {
+        PizzaFactory factory = PizzaFactory.getFactory(1);
+        Pizza pizzaProsciuttoEFunghi = factory.createPizza();
+        pizzaProsciuttoEFunghi.showIngredients();
+
+        factory = PizzaFactory.getFactory(0);
+        Pizza pizzaMargherita = factory.createPizza();
+        pizzaMargherita.showIngredients();
+    }
+
+}
+

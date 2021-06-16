@@ -1,3 +1,7 @@
+/**
+ * Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.
+ * In this example i create a unique builder, a unique factory to allow the creation of two type of Pizza.
+ */
 public class Builder {
     public static void main(String[] args) {
         Cook cook = new Cook();
