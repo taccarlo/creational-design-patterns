@@ -32,6 +32,10 @@ class PizzaFactory {
     }
 }
 
+/**
+ * Define an interface for creating a single object, but let subclasses decide which class to instantiate.
+ * Factory Method lets a class defer instantiation to subclasses.
+ */
 public class FactoryMethod {
     public static void main(String[] args) {
         PizzaFactory factory = new PizzaFactory();

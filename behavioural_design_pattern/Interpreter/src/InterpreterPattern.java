@@ -1,6 +1,5 @@
 import java.util.ArrayDeque;
 import java.util.Map;
-
 /**
  * Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
  */
@@ -43,6 +42,7 @@ public class InterpreterPattern {
                 return Expr.variable(token);
         }
     }
+
     public static Expr parse(String expression) {
         ArrayDeque<Expr> stack = new ArrayDeque<Expr>();
         for (String token : expression.split(" ")) {
@@ -52,7 +52,6 @@ public class InterpreterPattern {
     }
 
     //Finally evaluating the expression "w x z - +" with w = 5, x = 10, and z = 42.
-
     public static void main(final String[] args) {
         Expr expr = parse("w x z - +");
         Map<String, Integer> context = Map.of("w", 5, "x", 10, "z", 42);

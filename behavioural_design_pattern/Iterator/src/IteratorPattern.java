@@ -21,6 +21,9 @@ public class IteratorPattern {
         };
     }
 
+    /**
+     * Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+     */
     public static void main(String[] args) {
         var iterator = range(0, 10);
         while (iterator.hasNext()) {
