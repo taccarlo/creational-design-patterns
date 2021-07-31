@@ -16,11 +16,14 @@ class CompositePatternKotlin {
         val b = Children("Francesco")
         println(b.getGenealogicalTree())
 
-        val c = Father("Stefano", listOf(a,b))
+        val c = Children("Maria")
         println(c.getGenealogicalTree())
 
-        val d = Father( "Adamo", listOf(c))
+        val d = Father("Stefano", listOf(a,b,c))
         println(d.getGenealogicalTree())
+
+        val e = Father( "Adamo", listOf(d))
+        println(e.getGenealogicalTree())
 
     }
 
@@ -46,7 +49,7 @@ class Father constructor(private val name:String, private val sons:List<Human>) 
         var a = name
         a+=" { "
         sons.forEach{
-            a+=' '+it.getGenealogicalTree()
+            a+=" "+it.getGenealogicalTree()
         }
         a+=" } "
         return a
