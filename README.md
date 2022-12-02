@@ -1,6 +1,5 @@
 # creational-design-patterns
 
-## Riassunto concettuale in italiano
 <b>Pattern creazionali</b>
 <ul>
 <li>Abstract factory: Creo oggetto senza specificare la classe completa</li>
