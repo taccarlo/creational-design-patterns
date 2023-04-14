@@ -80,7 +80,7 @@ class MargheritaPizzaBuilder extends PizzaBuilder {
     }
 
     public void buildTopping() {
-        pizza.setTopping("pomodoro e mozzarella");
+        pizza.setTopping("mozzarella");
     }
 }
 
